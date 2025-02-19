@@ -12,9 +12,9 @@ echo "Running as root..."
 sleep 2
 clear
 
-uci set system.@system[0].zonename='Asia/Tehran'
+uci set system.@system[0].zonename='Asia/Yangon'
 
-uci set system.@system[0].timezone='<+0330>-3:30'
+uci set system.@system[0].timezone='<+0630>-6:30'
 
 uci commit
 
@@ -85,7 +85,7 @@ echo "Installing Passwall 1 ..."
 
 sleep 2
 
-rm -f passwall.sh && wget https://raw.githubusercontent.com/amirhosseinchoghaei/Passwall/main/passwall.sh && chmod 777 passwall.sh && sh passwall.sh
+rm -f passwall.sh && wget https://raw.githubusercontent.com/myokoko85/Passwall1/blob/main/passwall.sh && chmod 777 passwall.sh && sh passwall.sh
 
 
 ;;
